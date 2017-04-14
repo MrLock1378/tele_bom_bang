@@ -1,7 +1,7 @@
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 123456789 -- Put Here Your Bot ID
+our_id = 347817802 -- Put Here Your Bot ID
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
@@ -95,23 +95,23 @@ function create_config( )
 	"lock-fosh"
 	
  },
-    sudo_users = {310083510},
+    sudo_users = {374734484},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》bom_bang v3
+    info_text = [[》SPIDER v3
 
 🔰Our channel :
-》@sudo_monsters《
+》@KING_DIS_LOVE
 
 🔰Our channel2 :
-》@bom_bang_team《
+》@MRLOCK_CLI
 
 🔰Our channel3 :
-》@bombangteam《
+》@KING_DEP_LOVE
 
 🔰Our website :
-》http://telebombang2018
+》NO WebSite
 ]],
   }
   serialize_to_file(config, './data/config.lua')
@@ -535,7 +535,7 @@ local lang = redis:get(hash)
   if not lang then
     return '_Group is not added_'
 else
-    return 'گروه به لیست گروه های مدیریتی ربات اضافه نشده است'
+    return '`گروه به `لیست گروه های مدیریتی ربات اضافه نشده است'
    end
   end
   -- determine if table is empty
@@ -543,13 +543,13 @@ else
         if not lang then
 					return "_No_ *silent* _users in this group_"
    else
-					return "*لیست کاربران سایلنت شده خالی است*"
+					return "*لیست `کاربران سایلنت شده خالی` است*"
              end
 				end
       if not lang then
    message = '*List of silent users :*\n'
        else
-   message = '_لیست کاربران سایلنت شده :_\n'
+   message = '_`لیست `کاربران سایلنت شده :_\n'
     end
   for k,v in pairs(data[tostring(chat_id)]['is_silent_users']) do
     message = message ..i.. '- '..v..' [' ..k.. '] \n'
@@ -571,13 +571,13 @@ local lang = redis:get(hash)
     if not lang then
 					return "_No_ *globally banned* _users available_"
    else
-					return "*هیچ کاربری از گروه های ربات محروم نشده*"
+					return "*`هیچ کاربری از `گروه های ربات محروم نشده*"
              end
 				end
         if not lang then
    message = '*List of globally banned users :*\n'
    else
-   message = '_لیست کاربران محروم شده از گروه های ربات :_\n'
+   message = '_لیست کاربران `محروم شده` از گروه های ربات :_\n'
    end
   for k,v in pairs(data['gban_users']) do
     message = message ..i.. '- '..v..' [' ..k.. '] \n'
@@ -598,7 +598,7 @@ local lang = redis:get(hash)
   if not lang then
     return '_Group is not added_'
 else
-    return 'گروه به لیست گروه های مدیریتی ربات اضافه نشده است'
+    return 'گروه به لیست گروه های` مدیریتی ربات` اضافه نشده است'
    end
   end
   -- determine if table is empty
