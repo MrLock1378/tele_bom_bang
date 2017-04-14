@@ -2,11 +2,11 @@
 local function run(msg, matches) 
 if matches[1] == "setpm" then 
 if not is_sudo(msg) then 
-return 'شما سودو نیستید' 
+return 'شما `سودو` نیستید' 
 end 
 local pm = matches[2] 
 redis:set('bot:pm',pm) 
-return 'متن پاسخ گویی ثبت شد' 
+return 'متن `پاسخ گویی` ثبت شد' 
 end 
 
 if matches[1] == "pm" and is_sudo(msg) then
@@ -21,7 +21,7 @@ end
 
 if matches[1]=="monshi" then 
 if not is_sudo(msg) then 
-return 'شما سودو نیستید' 
+return 'شما `سودو` نیستید' 
 end 
 if matches[2]=="on"then 
 redis:set("bot:pm", "no pm")
