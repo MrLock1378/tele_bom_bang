@@ -9,7 +9,7 @@ local function run(msg, matches)
   if matches[1]:lower() == 'mt' and is_mod(msg) then
      local hash = 'mute_time:'..msg.chat_id_
      if not matches[2] then
-		return "_لطفا ساعت و دقیقه را وارد نمایید!_"
+		return "_لطفا `ساعت و دقیقه` را وارد نمایید!_"
   else
      local hour = string.gsub(matches[2], 'h', '')
      local num1 = tonumber(hour) * 3600
@@ -23,7 +23,7 @@ local function run(msg, matches)
   if matches[1]:lower() == 'unmt' and is_mod(msg) then
      local hash = 'mute_time:'..msg.chat_id_
      redis:del(hash)
-     return "*✅گروه برای ارسال پیام کاربران باز شد.*"
+     return "*✅گروه برای `ارسال پیام کاربران` باز شد.*"
   end
 end
 return {
