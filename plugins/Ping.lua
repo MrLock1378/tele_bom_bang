@@ -1,6 +1,6 @@
 ﻿--Begin Ping.lua By @bombangteam
 local datebase = {
-   "SPIDER BOT Online❤️",
+   "#SPIDER BOT 1 Online❤️",
    "جونم عشقم❤️",
   }
 local function run(msg, matches) 
